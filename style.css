@@ -144,9 +144,10 @@ nav .menu{
 
 .sub {
     width: 200px;
+    /* height: 100%; */
+    padding: 0 20px;
     background-color: #000000d6;
     color: white;
-    /* height: 50vh; */
     position: absolute;
     border-bottom-left-radius: 20px;
     right: 0;
