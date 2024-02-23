@@ -1,0 +1,45 @@
+
+@media screen and (max-width:700px) {
+
+    nav {
+        border-radius: 0;
+        justify-content: space-between;
+    }
+    nav .phone{
+         display: none;
+     }
+
+     .title{
+        /* flex-direction: row; */
+        min-width: 150px;
+        gap: 0;
+        margin-left: 0;
+        justify-content: start;
+        /* align-items: center; */
+        
+     }
+     .address{
+        display: none;
+    }
+
+     .food-menu{
+        flex-direction: column;
+    } 
+
+    .previous, .next{
+        /* color: #fff; */
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    
+
+   
+ }
+
+ @media screen and (max-width:500px) {
+
+    .address{
+         display: none;
+     }
+  
+ }

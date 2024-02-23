@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+img{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+body{
+    background-color: #dadada;
+    font-size: 16px;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background: #ffffff;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 10px;
+
+}
+
+.logo{
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.title{
+    margin-left: 15px;
+
+}
+
+.title h1{
+    font-size: 25px;
+    font-family: cursive;
+    /* font-weight: 600; */
+}
+.title p{
+    font-size: 13px;
+    font-style: italic;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+}
+.fa-location-dot{
+    margin-right: 5px;
+    font-size: 20px;
+}
+.address-details{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+
+}
+.address-details p{
+    font-size: 11px;
+}
+
+nav .menu{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+    
+}
+.menu ul li::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    border: none;
+    transition: .5s width;
+   
+   
+}
+
+.menu ul li:hover::after{
+    content: '';
+    position: absolute;
+
+    border: 1px solid rgb(13, 1, 1);
+    width: 100%;
+  
+}
+
+.phone{
+    display: flex;
+    min-width: 120px;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    
+}   
+
+.phone i{
+    margin-right: 5px;
+}
+
+
+
+.menu-icon{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-icon:hover{
+    /* color: rgb(0, 0, 0); */
+    color: #2d2b2b;
+    font-size: 27px;
+}
+
+.sub {
+    width: 200px;
+    background-color: #000000d6;
+    color: white;
+    height: 50vh;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    right: 0;
+    top: 0;
+    display: none;
+    z-index: 1000;
+}
+
+.mobile-menu {
+    
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+   
+}
+
+.mobile-menu li{
+    list-style: none;
+    padding: 15px 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.sub ul li a{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.mobile-menu li:hover{
+    background-color: #b72525;
+    z-index: 1;
+}
+
+.sub button{
+    border: none;
+    background: transparent;
+}
+.close-menu{
+    margin-bottom: 20px;
+}
+
+.close{
+    color: white;
+    font-size: 23px;
+    
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.close:hover{
+    color: rgb(152, 130, 130);
+    font-size: 28px;
+}
+
+@media screen and (max-width:960px) {
+
+   nav .menu{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+    
+}
+
+.content{
+    padding-bottom: 60px;
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.footer > div{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px 10px; */
+   
+}

@@ -1,0 +1,30 @@
+const image = document.querySelectorAll('.image-slider img');
+let n = 0;
+
+export function runTheShow(){
+
+
+    image.forEach((image) => {
+        image.addEventListener('mouseout', () => {
+            clearSliding();
+            console.log('mouseover');    
+        });
+    }           
+        function clearSliding(){
+            clearInterval(interval);
+            console.log('I am stopped');
+        }
+        let interval = () => {
+            setInterval(slideImage, 2000);
+        } 
+        function slideImage(){
+        for(let i = 0; i < image.length; i++){
+            image[i].style.display = 'none';
+        }
+        image[n].style.display = 'block';
+        n++;
+        if(n >= image.length){
+            n= 0;
+        } 
+    }
+}
