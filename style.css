@@ -220,7 +220,7 @@ nav .menu{
 }
 
 .content{
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .footer{
@@ -229,6 +229,7 @@ nav .menu{
     bottom: 0;
     background: #e9e3e3;
     padding: 10px 20px;
+   
     z-index: 1000;
 }
 
@@ -239,4 +240,24 @@ nav .menu{
     align-items: center;
     /* padding: 30px 10px; */
    
+}
+
+.specials{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 60px;
+    margin-top: 30px;
+}
+
+.specials .fa-facebook{
+    font-size: 18px;
+    cursor: pointer;
+    
+
+}
+
+.frame-fb{
+    padding: 10px 30px;
+    background-color: #e9e3e3;
+    margin-top: 10px;
 }
