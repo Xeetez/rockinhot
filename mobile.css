@@ -22,9 +22,9 @@
         display: none;
     }
 
-     .food-menu{
+     /* .food-menu{
         flex-direction: column;
-    } 
+    }  */
 
     .previous, .next{
         /* color: #fff; */

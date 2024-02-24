@@ -32,17 +32,14 @@
 }
 
 @keyframes slide{
-    25%{
-        clip-path: polygon(41% 0, 75% 0, 74% 99%, 41% 100%);
+    from{
+        opacity: 0.2;
+        /* clip-path: polygon(41% 0, 75% 0, 74% 99%, 41% 100%); */
     }
-    50%{
-        clip-path: polygon(16% 0, 75% 0, 74% 100%, 16% 100%);
-
-
-    }
-    100%{
-        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-
+  
+    to{
+        opacity: 1;
+        /* clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); */
 
     }
     
@@ -53,7 +50,7 @@
     font-size: 30px;
     cursor: pointer;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     transform: translateY(-50%);
 }
 
@@ -72,39 +69,48 @@
 }
 
 .food-menu{
-    margin: 0 20px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: -40px;
-    z-index: 100;
+   
+
 }
 
-.food-menu > div{
+.food-menu a{
+    z-index: 1000;
+}
+
+.food-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: 1px solid black; */
     box-shadow: 1px 2px #e5d7d7;
-    min-width: 200px;
+    max-width: 200px;
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
     background: #efe3e3;
-    z-index: 1000;
+    
 
 }
 
-.food-menu > div:hover{
+
+
+.food-card:hover{
     box-shadow: 1px 2px #cbb7b7;
+    transform: scale(1.2);
+    cursor: pointer
 }
 
-.food-menu h1{
+.food-card h1{
 font-size: 40PX;
 }
 
-.food-menu button{
+.food-card span{
     padding: 10px 20px;
     border-radius: 20px;
     background: rgb(32, 32, 234);
@@ -115,6 +121,6 @@ font-size: 40PX;
     margin-top: 20px;
 }
 
-.food-menu button:hover{
+.food-card button:hover{
     background: rgba(212, 88, 26, 0.712);
 }
