@@ -1,5 +1,5 @@
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:890px) {
 
     nav {
       
@@ -46,5 +46,10 @@
      .food-card{
         transform: scale(0.7);
      }
+     .previous, .next{
+        /* color: #fff; */
+        background-color: #fff;
+        border-radius: 50%;
+    }
   
  }
