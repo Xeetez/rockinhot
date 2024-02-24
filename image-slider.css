@@ -5,6 +5,7 @@
 }
 
 .imageItems{
+    width: 100%;
     max-width: 1200px;
     height: 400px; 
     margin-inline: auto;
@@ -69,6 +70,7 @@
 }
 
 .food-menu{
+    max-width: 400px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -90,7 +92,7 @@
     /* border: 1px solid black; */
     box-shadow: 1px 2px #e5d7d7;
     max-width: 200px;
-    margin: 20px;
+    margin-inline: 20px;
     padding: 20px;
     border-radius: 20px;
     background: hwb(0 89% 6% );
@@ -119,6 +121,9 @@ font-size: 40PX;
     border: none;
     outline: none;
     margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .food-card button:hover{

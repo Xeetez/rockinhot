@@ -2,6 +2,7 @@
 @media screen and (max-width:700px) {
 
     nav {
+      
         border-radius: 0;
         justify-content: space-between;
     }
@@ -40,6 +41,10 @@
 
     .address{
          display: none;
+     }
+
+     .food-card{
+        transform: scale(0.7);
      }
   
  }
